@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #D2B48C;
+}
+
+.menu{
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+}
+#titulo{
+    font-family: Bradley Hand, cursive;  /* 'Mitr', sans-serif */
+    color: white;
+    font-size: 50px;
+}
+
+canvas{
+    border: 2px solid white;
+}
+
+
+.jogo{
+    margin-left: 20%;
+    margin-top: 40px;
+    display: inline-flex;
+}
+
+.selecionar{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.palavra{
+    display: flex;
+    margin-top: 50%;
+    font-size: 50px;
+}
+
+.letras{
+    padding-left: 30px;
+}
+.letrinhas_palavra{
+    padding-left: 10px;
+}
+
+
