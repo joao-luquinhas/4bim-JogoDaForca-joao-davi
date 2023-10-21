@@ -1,9 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #D2B48C;
+    background-color: #6e5c62;
 }
-
 .menu{
     text-align: center;
     align-items: center;
@@ -15,34 +14,78 @@
     font-size: 50px;
 }
 
-canvas{
-    border: 2px solid white;
+
+
+#dica{
+    font-family: Verdana;
+    text-align: center;
+    color: #FAFAFF;
+    margin-top: 15px;
 }
 
 
+
 .jogo{
-    margin-left: 20%;
+    margin-left: 15%;
     margin-top: 40px;
     display: inline-flex;
 }
 
-.selecionar{
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-}
+
+
 
 .palavra{
     display: flex;
-    margin-top: 50%;
+    margin-top: 11%;
     font-size: 50px;
-}
-
-.letras{
-    padding-left: 30px;
+    justify-content: center;
+    font-family: Verdana;
+    color: #FAFAFF;
 }
 .letrinhas_palavra{
-    padding-left: 10px;
+    padding-left: 15px;
+    font-size: 90px;
 }
 
 
+
+button{
+    touch-action: manipulation;
+    outline: none;
+    background-color: #4C4347;
+    grid-column: span 3;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 0;
+    border-radius: 8%;
+    font-weight: 500;
+    font-family: 'Mitr', sans-serif;
+    cursor: pointer;
+    border: none;
+    color: #FAFAFF;
+    padding: 20px;
+    font-weight: bold;
+}
+.fileira1{
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.fileira2{
+    padding-left: 80px;
+    margin-top: 10px;
+
+}
+.fileira3{
+    padding-left: 135px;
+    margin-top: 10px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 0.75rem;
+    color: white;
+}
