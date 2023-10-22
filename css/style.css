@@ -82,10 +82,3 @@ button{
 
 
 
-footer {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-size: 0.75rem;
-    color: white;
-}
