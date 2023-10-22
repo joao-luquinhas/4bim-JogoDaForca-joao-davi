@@ -27,6 +27,8 @@ let b = document.getElementById("b");
 let n = document.getElementById("n");
 let m = document.getElementById("m");
 
+let tentativa = document.getElementById("tentativa");
+
 let dica = document.getElementById("dica");
 
 let acerto = 0;
@@ -38,28 +40,34 @@ let exito = false;
 let honra = false;
 let floco = false;
 
-let opcao = Math.floor(Math.random() * 5) + 1;
+let opcao; 
 
-switch (opcao){
-    case 1:
-        nivia = true;
-        break;
+sortear_palavra();
 
-    case 2:
-        vigor = true;
-        break;
+function sortear_palavra(){
+    opcao = Math.floor(Math.random() * 5) + 1;
 
-    case 3:
-        exito = true;
-        break;
+    switch (opcao){
+        case 1:
+            nivia = true;
+            break;
     
-    case 4:
-        honra = true;
-        break;
-
-    case 5:
-        floco = true;
-        break;
+        case 2:
+            vigor = true;
+            break;
+    
+        case 3:
+            exito = true;
+            break;
+        
+        case 4:
+            honra = true;
+            break;
+    
+        case 5:
+            floco = true;
+            break;
+    }
 }
 
 
@@ -69,14 +77,15 @@ while(nivia){
 
     function click_n(){
         acerto++;
-        forca();
+        vitoria();
         n.style.backgroundColor = "#3aa394";
         letra1.textContent = "N";
         n.disabled = true;
     }
     function click_i(){
         acerto++;
-        forca();
+        acerto++;
+        vitoria();
         i.style.backgroundColor = "#3aa394";
         letra2.textContent = "I";
         letra4.textContent = "I";
@@ -84,14 +93,14 @@ while(nivia){
     }
     function click_v(){
         acerto++;
-        forca();
+        vitoria();
         v.style.backgroundColor = "#3aa394";
         letra3.textContent = "V";
         v.disabled = true;
     }
     function click_a(){
         acerto++;
-        forca();
+        vitoria();
         a.style.backgroundColor = "#3aa394";
         letra5.textContent = "A";
         a.disabled = true;
@@ -262,35 +271,35 @@ while(vigor){
 
     function click_v(){
         acerto++;
-        forca();
+        vitoria();
         v.style.backgroundColor = "#3aa394";
         letra1.textContent = "V";
         v.disabled = true;
     }
     function click_i(){
         acerto++;
-        forca();
+        vitoria();
         i.style.backgroundColor = "#3aa394";
         letra2.textContent = "I";
         i.disabled = true;
     }
     function click_g(){
         acerto++;
-        forca();
+        vitoria();
         g.style.backgroundColor = "#3aa394";
         letra3.textContent = "G";
         g.disabled = true;
     }
     function click_o(){
         acerto++;
-        forca();
+        vitoria();
         o.style.backgroundColor = "#3aa394";
         letra4.textContent = "O";
         o.disabled = true;
     }
     function click_r(){
         acerto++;
-        forca();
+        vitoria();
         r.style.backgroundColor = "#3aa394";
         letra5.textContent = "R";
         r.disabled = true;
@@ -453,35 +462,35 @@ while(honra){
 
     function click_h(){
         acerto++;
-        forca();
+        vitoria();
         h.style.backgroundColor = "#3aa394";
         letra1.textContent = "H";
         h.disabled = true;
     }
     function click_o(){
         acerto++;
-        forca();
+        vitoria();
         o.style.backgroundColor = "#3aa394";
         letra2.textContent = "O";
         o.disabled = true;
     }
     function click_n(){
         acerto++;
-        forca();
+        vitoria();
         n.style.backgroundColor = "#3aa394";
         letra3.textContent = "N";
         n.disabled = true;
     }
     function click_r(){
         acerto++;
-        forca();
+        vitoria();
         r.style.backgroundColor = "#3aa394";
         letra4.textContent = "R";
         r.disabled = true;
     }
     function click_a(){
         acerto++;
-        forca();
+        vitoria();
         a.style.backgroundColor = "#3aa394";
         letra5.textContent = "A";
         a.disabled = true;
@@ -644,35 +653,35 @@ while(exito){
 
     function click_e(){
         acerto++;
-        forca();
+        vitoria();
         e.style.backgroundColor = "#3aa394";
         letra1.textContent = "Ê";
         e.disabled = true;
     }
     function click_x(){
         acerto++;
-        forca();
+        vitoria();
         x.style.backgroundColor = "#3aa394";
         letra2.textContent = "X";
         x.disabled = true;
     }
     function click_i(){
         acerto++;
-        forca();
+        vitoria();
         i.style.backgroundColor = "#3aa394";
         letra3.textContent = "I";
         i.disabled = true;
     }
     function click_t(){
         acerto++;
-        forca();
+        vitoria();
         t.style.backgroundColor = "#3aa394";
         letra4.textContent = "T";
         t.disabled = true;
     }
     function click_o(){
         acerto++;
-        forca();
+        vitoria();
         o.style.backgroundColor = "#3aa394";
         letra5.textContent = "O";
         o.disabled = true;
@@ -835,21 +844,22 @@ while(floco){
 
     function click_f(){
         acerto++;
-        forca();
+        vitoria();
         f.style.backgroundColor = "#3aa394";
         letra1.textContent = "F";
         f.disabled = true;
     }
     function click_l(){
         acerto++;
-        forca();
+        vitoria();
         l.style.backgroundColor = "#3aa394";
         letra2.textContent = "L";
         l.disabled = true;
     }
     function click_o(){
         acerto++;
-        forca();
+        acerto++;
+        vitoria();
         o.style.backgroundColor = "#3aa394";
         letra3.textContent = "O";
         letra5.textContent = "O";
@@ -857,7 +867,7 @@ while(floco){
     }
     function click_c(){
         acerto++;
-        forca();
+        vitoria();
         c.style.backgroundColor = "#3aa394";
         letra4.textContent = "C";
         c.disabled = true;
@@ -1044,11 +1054,172 @@ function forca(){
             break;
     
         case 6:
-            alert("Fim de Jogo");
+            alert("Você perdeu -_-");
+            q.disabled = true;
+            w.disabled = true;
+            e.disabled = true;
+            r.disabled = true;
+            t.disabled = true;
+            y.disabled = true;
+            u.disabled = true;
+            i.disabled = true;
+            o.disabled = true;
+            p.disabled = true;
+
+            a.disabled = true;
+            s.disabled = true;
+            d.disabled = true;
+            f.disabled = true;
+            g.disabled = true;
+            h.disabled = true;
+            j.disabled = true;
+            k.disabled = true;
+            l.disabled = true;
+
+            z.disabled = true;
+            x.disabled = true;
+            c.disabled = true;
+            v.disabled = true;
+            b.disabled = true;
+            n.disabled = true;
+            m.disabled = true;
+
             break;
     }
+}
 
+function vitoria(){
     if(acerto == 5){
-        alert("Você Venceu!");
+        alert("Você Venceu !");
+        tentativa.textContent = "Jogar Novamente";
+
+        q.disabled = true;
+        w.disabled = true;
+        e.disabled = true;
+        r.disabled = true;
+        t.disabled = true;
+        y.disabled = true;
+        u.disabled = true;
+        i.disabled = true;
+        o.disabled = true;
+        p.disabled = true;
+
+        a.disabled = true;
+        s.disabled = true;
+        d.disabled = true;
+        f.disabled = true;
+        g.disabled = true;
+        h.disabled = true;
+        j.disabled = true;
+        k.disabled = true;
+        l.disabled = true;
+
+        z.disabled = true;
+        x.disabled = true;
+        c.disabled = true;
+        v.disabled = true;
+        b.disabled = true;
+        n.disabled = true;
+        m.disabled = true;
     }
+}
+
+function tente_nov(){
+    opcao -= opcao;
+    acerto -= acerto;
+    erro -= erro;
+
+    nivia = false;
+    vigor = false;
+    exito = false;
+    honra = false;
+    floco = false;
+
+    letra1.textContent = "_";
+    letra2.textContent = "_";
+    letra3.textContent = "_";
+    letra4.textContent = "_";
+    letra5.textContent = "_";
+
+    tentativa.textContent = "Tentar Novamente";
+
+    q.style.backgroundColor = "#4C4347"; 
+    q.disabled = false;
+
+    w.style.backgroundColor = "#4C4347"; 
+    w.disabled = false;
+
+    e.style.backgroundColor = "#4C4347"; 
+    e.disabled = false;
+
+    r.style.backgroundColor = "#4C4347"; 
+    r.disabled = false;
+
+    t.style.backgroundColor = "#4C4347"; 
+    t.disabled = false;
+
+    y.style.backgroundColor = "#4C4347"; 
+    y.disabled = false;
+
+    u.style.backgroundColor = "#4C4347"; 
+    u.disabled = false;
+
+    i.style.backgroundColor = "#4C4347"; 
+    i.disabled = false;
+
+    o.style.backgroundColor = "#4C4347"; 
+    o.disabled = false;
+
+    p.style.backgroundColor = "#4C4347"; 
+    p.disabled = false;
+
+    a.style.backgroundColor = "#4C4347"; 
+    a.disabled = false;
+
+    s.style.backgroundColor = "#4C4347"; 
+    s.disabled = false;
+
+    d.style.backgroundColor = "#4C4347"; 
+    d.disabled = false;
+
+    f.style.backgroundColor = "#4C4347"; 
+    f.disabled = false;
+
+    g.style.backgroundColor = "#4C4347"; 
+    g.disabled = false;
+
+    h.style.backgroundColor = "#4C4347"; 
+    h.disabled = false;
+
+    j.style.backgroundColor = "#4C4347"; 
+    j.disabled = false;
+
+    k.style.backgroundColor = "#4C4347"; 
+    k.disabled = false;
+
+    l.style.backgroundColor = "#4C4347"; 
+    l.disabled = false;
+
+    z.style.backgroundColor = "#4C4347"; 
+    z.disabled = false;
+
+    x.style.backgroundColor = "#4C4347"; 
+    x.disabled = false;
+
+    c.style.backgroundColor = "#4C4347"; 
+    c.disabled = false;
+
+    v.style.backgroundColor = "#4C4347"; 
+    v.disabled = false;
+
+    b.style.backgroundColor = "#4C4347"; 
+    b.disabled = false;
+
+    n.style.backgroundColor = "#4C4347"; 
+    n.disabled = false;
+
+    m.style.backgroundColor = "#4C4347"; 
+    m.disabled = false;
+
+    sortear_palavra();
 }
