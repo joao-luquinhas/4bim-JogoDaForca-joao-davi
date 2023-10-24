@@ -1,3 +1,118 @@
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d"); //Tamanho: 400 x 400
+
+//desenha o altar
+ctx.beginPath();
+ctx.moveTo(50,350);
+ctx.lineTo(200,350);
+ctx.lineWidth = 10;
+ctx.stroke();
+ctx.closePath();
+ctx.beginPath();
+ctx.moveTo(125,350);
+ctx.lineTo(125,25);
+ctx.lineTo(300,25);
+ctx.lineTo(300,50);
+ctx.lineWidth = 8;
+ctx.stroke();
+ctx.closePath();
+
+function forca_reset(){
+    //desenha o altar
+    ctx.clearRect(0,0,400,400);
+    ctx.beginPath();
+    ctx.moveTo(50,350);
+    ctx.lineTo(200,350);
+    ctx.lineWidth = 10;
+    ctx.stroke();
+    ctx.closePath();
+    ctx.beginPath();
+    ctx.moveTo(125,350);
+    ctx.lineTo(125,25);
+    ctx.lineTo(300,25);
+    ctx.lineTo(300,50);
+    ctx.lineWidth = 8;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_cabeca(){
+    //cabeça
+    ctx.beginPath();
+    ctx.arc(300, 82, 30, 0, 2 * Math.PI, false);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_corpo(){
+    //corpo
+    ctx.beginPath();
+    ctx.moveTo(300,110);
+    ctx.lineTo(300,225);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_perna_esq(){
+    //perna esquerda
+    ctx.beginPath();
+    ctx.moveTo(300,225);
+    ctx.lineTo(260,260);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_perna_dir(){
+    //perna direita
+    ctx.beginPath();
+    ctx.moveTo(300,225);
+    ctx.lineTo(340,260);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_braco_esq(){
+    //braco esquerdo
+    ctx.beginPath();
+    ctx.moveTo(300,150);
+    ctx.lineTo(250,150);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_braco_dir(){
+    //braco direito
+    ctx.beginPath();
+    ctx.moveTo(300,150);
+    ctx.lineTo(350,150);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath();
+}
+
+function forca_morto(){
+    //morto
+    ctx.beginPath();
+    ctx.moveTo(305,68);
+    ctx.lineTo(320,90);
+    ctx.moveTo(305,90);
+    ctx.lineTo(320,68);
+    ctx.moveTo(280,68);
+    ctx.lineTo(295,90);
+    ctx.moveTo(280,90);
+    ctx.lineTo(295,68);
+    ctx.lineWidth = 5;
+    ctx.stroke();
+    ctx.closePath(); 
+}
+                     
+
+
 let q = document.getElementById("q");
 let w = document.getElementById("w");
 let e = document.getElementById("e");
@@ -1034,27 +1149,30 @@ while(floco){
 function forca(){
     switch (erro){
         case 1:
-            alert("erro 1");
+            forca_cabeca();
             break;
 
         case 2:
-            alert("erro 2");
+            forca_corpo();
             break;
 
         case 3:
-            alert("erro 3");
+            forca_perna_esq();
             break;
         
         case 4:
-            alert("erro 4");
+            forca_perna_dir();
             break;
     
         case 5:
-            alert("erro 5");
+            forca_braco_esq();
             break;
     
         case 6:
-            alert("Você perdeu -_-");
+            alert("Você Perdeu");
+            forca_braco_dir();
+            forca_morto();
+
             q.disabled = true;
             w.disabled = true;
             e.disabled = true;
@@ -1092,6 +1210,7 @@ function vitoria(){
     if(acerto == 5){
         alert("Você Venceu !");
         tentativa.textContent = "Jogar Novamente";
+        forca_reset();
 
         q.disabled = true;
         w.disabled = true;
@@ -1128,6 +1247,8 @@ function tente_nov(){
     opcao -= opcao;
     acerto -= acerto;
     erro -= erro;
+
+    forca_reset();
 
     nivia = false;
     vigor = false;

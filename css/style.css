@@ -9,7 +9,7 @@
     margin-top: 5px;
 }
 #titulo{
-    font-family: Bradley Hand, cursive;  /* 'Mitr', sans-serif */
+    font-family: Bradley Hand, cursive;  
     color: white;
     font-size: 50px;
 }
@@ -85,3 +85,6 @@ button{
     margin-top: 40px;
 }
 
+#canvas{
+    margin-top: 10px;
+}
