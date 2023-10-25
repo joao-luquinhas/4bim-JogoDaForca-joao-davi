@@ -155,12 +155,18 @@ let exito = false;
 let honra = false;
 let floco = false;
 
+let caqui = false; 
+let foice = false; 
+let emily = false; 
+let tigre = false; 
+let gaita = false; 
+
 let opcao; 
 
 sortear_palavra();
 
 function sortear_palavra(){
-    opcao = Math.floor(Math.random() * 5) + 1;
+    opcao = Math.floor(Math.random() * 10) + 1;
 
     switch (opcao){
         case 1:
@@ -181,6 +187,26 @@ function sortear_palavra(){
     
         case 5:
             floco = true;
+            break;
+        
+        case 6:
+            caqui = true;
+            break;
+
+        case 7:
+            foice = true;
+            break;
+
+        case 8:
+            emily = true;
+            break;
+
+        case 9:
+            tigre = true;
+            break;
+
+        case 10:
+            gaita = true;
             break;
     }
 }
@@ -380,7 +406,6 @@ while(nivia){
 }
 
 
-
 while(vigor){
     dica.textContent = "Qualidade";
 
@@ -569,7 +594,6 @@ while(vigor){
     }
     break;
 }
-
 
 
 while(honra){
@@ -762,7 +786,6 @@ while(honra){
 }
 
 
-
 while(exito){
     dica.textContent = "Resultado";
 
@@ -951,7 +974,6 @@ while(exito){
     }
     break;
 }
-
 
 
 while(floco){
@@ -1146,6 +1168,964 @@ while(floco){
     break;
 }
 
+
+while(caqui){
+    dica.textContent = "Fruta";
+
+    function click_c(){
+        acerto++;
+        vitoria();
+        c.style.backgroundColor = "#3aa394";
+        letra1.textContent = "C";
+        c.disabled = true;
+    }
+    function click_a(){
+        acerto++;
+        vitoria();
+        a.style.backgroundColor = "#3aa394";
+        letra2.textContent = "A";
+        a.disabled = true;
+    }
+    function click_q(){
+        acerto++;
+        vitoria();
+        q.style.backgroundColor = "#3aa394";
+        letra3.textContent = "Q";
+        q.disabled = true;
+    }
+    function click_u(){
+        acerto++;
+        vitoria();
+        u.style.backgroundColor = "#3aa394";
+        letra4.textContent = "U";
+        u.disabled = true;
+    }
+    function click_i(){
+        acerto++;
+        vitoria();
+        i.style.backgroundColor = "#3aa394";
+        letra5.textContent = "I";
+        i.disabled = true;
+    }
+
+
+
+    function click_w(){
+        erro++;
+        w.style.backgroundColor = "#800000";
+        w.disabled = true;
+        forca();
+    }
+
+    function click_e(){
+        erro++;
+        e.style.backgroundColor = "#800000";
+        e.disabled = true;
+        forca();
+    }
+
+    function click_r(){
+        erro++;
+        r.style.backgroundColor = "#800000";
+        r.disabled = true;
+        forca();
+    }
+
+    function click_t(){
+        erro++;
+        t.style.backgroundColor = "#800000";
+        t.disabled = true;
+        forca();
+    }
+
+    function click_y(){
+        erro++;
+        y.style.backgroundColor = "#800000";
+        y.disabled = true;
+        forca();
+    }
+
+    function click_o(){
+        erro++;
+        o.style.backgroundColor = "#800000";
+        o.disabled = true;
+        forca();
+    }
+
+    function click_p(){
+        erro++;
+        p.style.backgroundColor = "#800000";
+        p.disabled = true;
+        forca();
+    }
+
+    function click_s(){
+        erro++;
+        s.style.backgroundColor = "#800000";
+        s.disabled = true;
+        forca();
+    }
+
+    function click_d(){
+        erro++;
+        d.style.backgroundColor = "#800000";
+        d.disabled = true;
+        forca();
+    }
+
+    function click_f(){
+        erro++;
+        f.style.backgroundColor = "#800000";
+        f.disabled = true;
+        forca();
+    }
+
+    function click_g(){
+        erro++;
+        g.style.backgroundColor = "#800000";
+        g.disabled = true;
+        forca();
+    }
+
+    function click_h(){
+        erro++;
+        h.style.backgroundColor = "#800000";
+        h.disabled = true;
+        forca();
+    }
+
+    function click_j(){
+        erro++;
+        j.style.backgroundColor = "#800000";
+        j.disabled = true;
+        forca();
+    }
+
+    function click_k(){
+        erro++;
+        k.style.backgroundColor = "#800000";
+        k.disabled = true;
+        forca();
+    }
+
+    function click_l(){
+        erro++;
+        l.style.backgroundColor = "#800000";
+        l.disabled = true;
+        forca();
+    }
+
+    function click_z(){
+        erro++;
+        z.style.backgroundColor = "#800000";
+        z.disabled = true;
+        forca();
+    }
+
+    function click_x(){
+        erro++;
+        x.style.backgroundColor = "#800000";
+        x.disabled = true;
+        forca();
+    }
+
+    function click_v(){
+        erro++;
+        v.style.backgroundColor = "#800000";
+        v.disabled = true;
+        forca();
+    }
+
+    function click_b(){
+        erro++;
+        b.style.backgroundColor = "#800000";
+        b.disabled = true;
+        forca();
+    }
+
+    function click_n(){
+        erro++;
+        n.style.backgroundColor = "#800000";
+        n.disabled = true;
+        forca();
+    }
+
+    function click_m(){
+        erro++;
+        m.style.backgroundColor = "#800000";
+        m.disabled = true;
+        forca();
+    }
+    break;
+}
+
+
+while(foice){
+    dica.textContent = "Ferramenta";
+
+    function click_f(){
+        acerto++;
+        vitoria();
+        f.style.backgroundColor = "#3aa394";
+        letra1.textContent = "F";
+        f.disabled = true;
+    }
+    function click_o(){
+        acerto++;
+        vitoria();
+        o.style.backgroundColor = "#3aa394";
+        letra2.textContent = "O";
+        o.disabled = true;
+    }
+    function click_i(){
+        acerto++;
+        vitoria();
+        i.style.backgroundColor = "#3aa394";
+        letra3.textContent = "I";
+        i.disabled = true;
+    }
+    function click_c(){
+        acerto++;
+        vitoria();
+        c.style.backgroundColor = "#3aa394";
+        letra4.textContent = "C";
+        c.disabled = true;
+    }
+    function click_e(){
+        acerto++;
+        vitoria();
+        e.style.backgroundColor = "#3aa394";
+        letra5.textContent = "E";
+        e.disabled = true;
+    }
+    
+    
+
+    function click_q(){
+        erro++;
+        q.style.backgroundColor = "#800000";
+        q.disabled = true;
+        forca();
+    }
+
+    function click_w(){
+        erro++;
+        w.style.backgroundColor = "#800000";
+        w.disabled = true;
+        forca();
+    }
+
+    function click_r(){
+        erro++;
+        r.style.backgroundColor = "#800000";
+        r.disabled = true;
+        forca();
+    }
+
+    function click_t(){
+        erro++;
+        t.style.backgroundColor = "#800000";
+        t.disabled = true;
+        forca();
+    }
+
+    function click_y(){
+        erro++;
+        y.style.backgroundColor = "#800000";
+        y.disabled = true;
+        forca();
+    }
+
+    function click_u(){
+        erro++;
+        u.style.backgroundColor = "#800000";
+        u.disabled = true;
+        forca();
+    }
+
+    function click_p(){
+        erro++;
+        p.style.backgroundColor = "#800000";
+        p.disabled = true;
+        forca();
+    }
+
+    function click_a(){
+        erro++;
+        a.style.backgroundColor = "#800000";
+        a.disabled = true;
+        forca();
+    }
+
+    function click_s(){
+        erro++;
+        s.style.backgroundColor = "#800000";
+        s.disabled = true;
+        forca();
+    }
+
+    function click_d(){
+        erro++;
+        d.style.backgroundColor = "#800000";
+        d.disabled = true;
+        forca();
+    }
+
+    function click_g(){
+        erro++;
+        g.style.backgroundColor = "#800000";
+        g.disabled = true;
+        forca();
+    }
+
+    function click_h(){
+        erro++;
+        h.style.backgroundColor = "#800000";
+        h.disabled = true;
+        forca();
+    }
+
+    function click_j(){
+        erro++;
+        j.style.backgroundColor = "#800000";
+        j.disabled = true;
+        forca();
+    }
+
+    function click_k(){
+        erro++;
+        k.style.backgroundColor = "#800000";
+        k.disabled = true;
+        forca();
+    }
+
+    function click_l(){
+        erro++;
+        l.style.backgroundColor = "#800000";
+        l.disabled = true;
+        forca();
+    }
+
+    function click_z(){
+        erro++;
+        z.style.backgroundColor = "#800000";
+        z.disabled = true;
+        forca();
+    }
+
+    function click_x(){
+        erro++;
+        x.style.backgroundColor = "#800000";
+        x.disabled = true;
+        forca();
+    }
+
+    function click_v(){
+        erro++;
+        v.style.backgroundColor = "#800000";
+        v.disabled = true;
+        forca();
+    }
+
+    function click_b(){
+        erro++;
+        b.style.backgroundColor = "#800000";
+        b.disabled = true;
+        forca();
+    }
+
+    function click_n(){
+        erro++;
+        n.style.backgroundColor = "#800000";
+        n.disabled = true;
+        forca();
+    }
+
+    function click_m(){
+        erro++;
+        m.style.backgroundColor = "#800000";
+        m.disabled = true;
+        forca();
+    }
+    break;
+}
+
+
+while(emily){
+    dica.textContent = "Nome";
+
+    function click_e(){
+        acerto++;
+        vitoria();
+        e.style.backgroundColor = "#3aa394";
+        letra1.textContent = "E";
+        e.disabled = true;
+    }
+    function click_m(){
+        acerto++;
+        vitoria();
+        m.style.backgroundColor = "#3aa394";
+        letra2.textContent = "M";
+        m.disabled = true;
+    }
+    function click_i(){
+        acerto++;
+        vitoria();
+        i.style.backgroundColor = "#3aa394";
+        letra3.textContent = "I";
+        i.disabled = true;
+    }
+    function click_l(){
+        acerto++;
+        vitoria();
+        l.style.backgroundColor = "#3aa394";
+        letra4.textContent = "L";
+        l.disabled = true;
+    }
+    function click_y(){
+        acerto++;
+        vitoria();
+        y.style.backgroundColor = "#3aa394";
+        letra5.textContent = "Y";
+        y.disabled = true;
+    }
+    
+    
+
+    function click_q(){
+        erro++;
+        q.style.backgroundColor = "#800000";
+        q.disabled = true;
+        forca();
+    }
+
+    function click_w(){
+        erro++;
+        w.style.backgroundColor = "#800000";
+        w.disabled = true;
+        forca();
+    }
+
+    function click_r(){
+        erro++;
+        r.style.backgroundColor = "#800000";
+        r.disabled = true;
+        forca();
+    }
+
+    function click_t(){
+        erro++;
+        t.style.backgroundColor = "#800000";
+        t.disabled = true;
+        forca();
+    }
+
+    function click_u(){
+        erro++;
+        u.style.backgroundColor = "#800000";
+        u.disabled = true;
+        forca();
+    }
+
+    function click_o(){
+        erro++;
+        o.style.backgroundColor = "#800000";
+        o.disabled = true;
+        forca();
+    }
+
+    function click_p(){
+        erro++;
+        p.style.backgroundColor = "#800000";
+        p.disabled = true;
+        forca();
+    }
+
+    function click_a(){
+        erro++;
+        a.style.backgroundColor = "#800000";
+        a.disabled = true;
+        forca();
+    }
+
+    function click_s(){
+        erro++;
+        s.style.backgroundColor = "#800000";
+        s.disabled = true;
+        forca();
+    }
+
+    function click_d(){
+        erro++;
+        d.style.backgroundColor = "#800000";
+        d.disabled = true;
+        forca();
+    }
+
+    function click_f(){
+        erro++;
+        f.style.backgroundColor = "#800000";
+        f.disabled = true;
+        forca();
+    }
+
+    function click_g(){
+        erro++;
+        g.style.backgroundColor = "#800000";
+        g.disabled = true;
+        forca();
+    }
+
+    function click_h(){
+        erro++;
+        h.style.backgroundColor = "#800000";
+        h.disabled = true;
+        forca();
+    }
+
+    function click_j(){
+        erro++;
+        j.style.backgroundColor = "#800000";
+        j.disabled = true;
+        forca();
+    }
+
+    function click_k(){
+        erro++;
+        k.style.backgroundColor = "#800000";
+        k.disabled = true;
+        forca();
+    }
+
+    function click_z(){
+        erro++;
+        z.style.backgroundColor = "#800000";
+        z.disabled = true;
+        forca();
+    }
+
+    function click_x(){
+        erro++;
+        x.style.backgroundColor = "#800000";
+        x.disabled = true;
+        forca();
+    }
+
+    function click_c(){
+        erro++;
+        c.style.backgroundColor = "#800000";
+        c.disabled = true;
+        forca();
+    }
+
+    function click_v(){
+        erro++;
+        v.style.backgroundColor = "#800000";
+        v.disabled = true;
+        forca();
+    }
+
+    function click_b(){
+        erro++;
+        b.style.backgroundColor = "#800000";
+        b.disabled = true;
+        forca();
+    }
+
+    function click_n(){
+        erro++;
+        n.style.backgroundColor = "#800000";
+        n.disabled = true;
+        forca();
+    }
+    break;
+}
+
+
+while(tigre){
+    dica.textContent = "Animal";
+
+    function click_t(){
+        acerto++;
+        vitoria();
+        t.style.backgroundColor = "#3aa394";
+        letra1.textContent = "T";
+        t.disabled = true;
+    }
+    function click_i(){
+        acerto++;
+        vitoria();
+        i.style.backgroundColor = "#3aa394";
+        letra2.textContent = "I";
+        i.disabled = true;
+    }
+    function click_g(){
+        acerto++;
+        vitoria();
+        g.style.backgroundColor = "#3aa394";
+        letra3.textContent = "G";
+        g.disabled = true;
+    }
+    function click_r(){
+        acerto++;
+        vitoria();
+        r.style.backgroundColor = "#3aa394";
+        letra4.textContent = "R";
+        r.disabled = true;
+    }
+    function click_e(){
+        acerto++;
+        vitoria();
+        e.style.backgroundColor = "#3aa394";
+        letra5.textContent = "E";
+        e.disabled = true;
+    }
+    
+    
+
+    function click_q(){
+        erro++;
+        q.style.backgroundColor = "#800000";
+        q.disabled = true;
+        forca();
+    }
+
+    function click_w(){
+        erro++;
+        w.style.backgroundColor = "#800000";
+        w.disabled = true;
+        forca();
+    }
+
+    function click_y(){
+        erro++;
+        y.style.backgroundColor = "#800000";
+        y.disabled = true;
+        forca();
+    }
+
+    function click_u(){
+        erro++;
+        u.style.backgroundColor = "#800000";
+        u.disabled = true;
+        forca();
+    }
+
+    function click_o(){
+        erro++;
+        o.style.backgroundColor = "#800000";
+        o.disabled = true;
+        forca();
+    }
+
+    function click_p(){
+        erro++;
+        p.style.backgroundColor = "#800000";
+        p.disabled = true;
+        forca();
+    }
+
+    function click_a(){
+        erro++;
+        a.style.backgroundColor = "#800000";
+        a.disabled = true;
+        forca();
+    }
+
+    function click_s(){
+        erro++;
+        s.style.backgroundColor = "#800000";
+        s.disabled = true;
+        forca();
+    }
+
+    function click_d(){
+        erro++;
+        d.style.backgroundColor = "#800000";
+        d.disabled = true;
+        forca();
+    }
+
+    function click_f(){
+        erro++;
+        f.style.backgroundColor = "#800000";
+        f.disabled = true;
+        forca();
+    }
+
+    function click_h(){
+        erro++;
+        h.style.backgroundColor = "#800000";
+        h.disabled = true;
+        forca();
+    }
+
+    function click_j(){
+        erro++;
+        j.style.backgroundColor = "#800000";
+        j.disabled = true;
+        forca();
+    }
+
+    function click_k(){
+        erro++;
+        k.style.backgroundColor = "#800000";
+        k.disabled = true;
+        forca();
+    }
+
+    function click_l(){
+        erro++;
+        l.style.backgroundColor = "#800000";
+        l.disabled = true;
+        forca();
+    }
+
+    function click_z(){
+        erro++;
+        z.style.backgroundColor = "#800000";
+        z.disabled = true;
+        forca();
+    }
+
+    function click_x(){
+        erro++;
+        x.style.backgroundColor = "#800000";
+        x.disabled = true;
+        forca();
+    }
+
+    function click_c(){
+        erro++;
+        c.style.backgroundColor = "#800000";
+        c.disabled = true;
+        forca();
+    }
+
+    function click_v(){
+        erro++;
+        v.style.backgroundColor = "#800000";
+        v.disabled = true;
+        forca();
+    }
+
+    function click_b(){
+        erro++;
+        b.style.backgroundColor = "#800000";
+        b.disabled = true;
+        forca();
+    }
+
+    function click_n(){
+        erro++;
+        n.style.backgroundColor = "#800000";
+        n.disabled = true;
+        forca();
+    }
+
+    function click_m(){
+        erro++;
+        m.style.backgroundColor = "#800000";
+        m.disabled = true;
+        forca();
+    }
+    break;
+}
+
+
+while(gaita){
+    dica.textContent = "Instrumento";
+
+    function click_g(){
+        acerto++;
+        vitoria();
+        g.style.backgroundColor = "#3aa394";
+        letra1.textContent = "G";
+        g.disabled = true;
+    }
+    function click_a(){
+        acerto++;
+        acerto++;
+        vitoria();
+        a.style.backgroundColor = "#3aa394";
+        letra2.textContent = "A";
+        letra5.textContent = "A";
+        a.disabled = true;
+    }
+    function click_i(){
+        acerto++;
+        vitoria();
+        i.style.backgroundColor = "#3aa394";
+        letra3.textContent = "I";
+        i.disabled = true;
+    }
+    function click_t(){
+        acerto++;
+        vitoria();
+        t.style.backgroundColor = "#3aa394";
+        letra4.textContent = "T";
+        t.disabled = true;
+    }
+
+
+
+    function click_q(){
+        erro++;
+        q.style.backgroundColor = "#800000";
+        q.disabled = true;
+        forca();
+    }
+
+    function click_w(){
+        erro++;
+        w.style.backgroundColor = "#800000";
+        w.disabled = true;
+        forca();
+    }
+
+    function click_e(){
+        erro++;
+        e.style.backgroundColor = "#800000";
+        e.disabled = true;
+        forca();
+    }
+
+    function click_r(){
+        erro++;
+        r.style.backgroundColor = "#800000";
+        r.disabled = true;
+        forca();
+    }
+
+    function click_y(){
+        erro++;
+        y.style.backgroundColor = "#800000";
+        y.disabled = true;
+        forca();
+    }
+
+    function click_u(){
+        erro++;
+        u.style.backgroundColor = "#800000";
+        u.disabled = true;
+        forca();
+    }
+
+    function click_o(){
+        erro++;
+        o.style.backgroundColor = "#800000";
+        o.disabled = true;
+        forca();
+    }
+
+    function click_p(){
+        erro++;
+        p.style.backgroundColor = "#800000";
+        p.disabled = true;
+        forca();
+    }
+
+    function click_s(){
+        erro++;
+        s.style.backgroundColor = "#800000";
+        s.disabled = true;
+        forca();
+    }
+
+    function click_d(){
+        erro++;
+        d.style.backgroundColor = "#800000";
+        d.disabled = true;
+        forca();
+    }
+
+    function click_f(){
+        erro++;
+        f.style.backgroundColor = "#800000";
+        f.disabled = true;
+        forca();
+    }
+
+    function click_h(){
+        erro++;
+        h.style.backgroundColor = "#800000";
+        h.disabled = true;
+        forca();
+    }
+
+    function click_j(){
+        erro++;
+        j.style.backgroundColor = "#800000";
+        j.disabled = true;
+        forca();
+    }
+
+    function click_k(){
+        erro++;
+        k.style.backgroundColor = "#800000";
+        k.disabled = true;
+        forca();
+    }
+
+    function click_l(){
+        erro++;
+        l.style.backgroundColor = "#800000";
+        l.disabled = true;
+        forca();
+    }
+
+    function click_z(){
+        erro++;
+        z.style.backgroundColor = "#800000";
+        z.disabled = true;
+        forca();
+    }
+
+    function click_x(){
+        erro++;
+        x.style.backgroundColor = "#800000";
+        x.disabled = true;
+        forca();
+    }
+
+    function click_c(){
+        erro++;
+        c.style.backgroundColor = "#800000";
+        c.disabled = true;
+        forca();
+    }
+
+    function click_v(){
+        erro++;
+        v.style.backgroundColor = "#800000";
+        v.disabled = true;
+        forca();
+    }
+
+    function click_b(){
+        erro++;
+        b.style.backgroundColor = "#800000";
+        b.disabled = true;
+        forca();
+    }
+
+    function click_n(){
+        erro++;
+        n.style.backgroundColor = "#800000";
+        n.disabled = true;
+        forca();
+    }
+
+    function click_m(){
+        erro++;
+        m.style.backgroundColor = "#800000";
+        m.disabled = true;
+        forca();
+    }
+    break;
+}
+
+
 function forca(){
     switch (erro){
         case 1:
@@ -1255,6 +2235,12 @@ function tente_nov(){
     exito = false;
     honra = false;
     floco = false;
+    caqui = false; 
+    foice = false; 
+    emily = false; 
+    tigre = false; 
+    gaita = false; 
+
 
     letra1.textContent = "_";
     letra2.textContent = "_";
