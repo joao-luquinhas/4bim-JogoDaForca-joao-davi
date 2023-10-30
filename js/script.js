@@ -2190,7 +2190,6 @@ function vitoria(){
     if(acerto == 5){
         alert("Você Venceu !");
         tentativa.textContent = "Jogar Novamente";
-        forca_reset();
 
         q.disabled = true;
         w.disabled = true;
@@ -2228,7 +2227,7 @@ function tente_nov(){
     acerto -= acerto;
     erro -= erro;
 
-    forca_reset();
+    window.location.reload();
 
     nivia = false;
     vigor = false;
