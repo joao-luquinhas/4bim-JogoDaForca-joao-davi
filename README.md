@@ -10,3 +10,12 @@
 <h2>Documentação:</h2>
 <img src="img/documentacao.png">
 
+<h2>Diagrama de Casos de Uso:</h2>
+<img src="img/uso.jpg">
+
+<h2>Diagrama de Classes:</h2>
+<img src="img/classes.jpeg">
+
+<h2>Diagrama de Atividade:</h2>
+<img src="img/atv.jpg">
+
