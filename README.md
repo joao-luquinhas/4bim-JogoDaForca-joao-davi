@@ -7,4 +7,6 @@
 
 <h2>Andamento do projeto:</h2> Concluído
 
+<h2>Documentação:</h2>
+<img src="img/documentacao.png">
 
