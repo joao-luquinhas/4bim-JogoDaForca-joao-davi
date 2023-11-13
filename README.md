@@ -14,7 +14,7 @@
 <img src="img/uso.jpg">
 
 <h2>Diagrama de Classes:</h2>
-<img src="img/classes.jpeg">
+<img src="img/classes.jpg">
 
 <h2>Diagrama de Atividade:</h2>
 <img src="img/atv.jpg">
